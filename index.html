@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+       
+
+        .body {
+            width: 1349px;
+           
+        }
+
+        .top {
+            background-color: rgb(242, 242, 243);
+            padding: 12px;
+            position: fixed;
+            /* width: 100vw; */
+            width: 100%;
+            z-index: 6;
+        }
+
+        .main1 {
+
+            display: grid;
+            grid-template-columns: 575px 575px;
+            margin: 80px;
+            height: 800px;
+            padding: 20px;
+            z-index: 3;
+            background-color: rgb(236, 233, 233);
+            position: absolute;
+            top: 78px;
+
+        }
+
+        .para {
+            /* border: 1px solid pink; */
+            width: 400px;
+            font-size: 20px;
+            background-color: rgb(236, 233, 233);
+            position: absolute;
+            z-index: 4;
+            top: 200px;
+            left: 100px;
+        }
+
+        .para p {
+            color: rgb(104, 101, 101);
+        }
+
+        .main2 {
+            /* border: 1px solid orange; */
+            position: absolute;
+            top: 80px;
+            left: 570px;
+            z-index: 4;
+        }
+
+        .main3 {
+            /* border: 1px solid red; */
+            width: 670px;
+            height: 930px;
+            position: absolute;
+            top: 880px;
+            left: 676px;
+            z-index: 2;
+            text-align: end;
+            background-color: #b89f5d;
+            color: white;
+            font-size: 26px;
+
+        }
+
+        .main3 div {
+            margin-top: 380px;
+            margin-right: 100px;
+        }
+
+        .p1 {
+            font-size: 20px;
+        }
+
+        .btn {
+            border: none;
+            color: white;
+            background-color: rgb(100, 99, 99);
+            margin-top: 50px;
+            margin-left: 276px;
+            width: 150px;
+            padding: 13px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: rgb(82, 81, 81);
+        }
+
+        .main4 {
+            position: absolute;
+            top: 1100px;
+            left: 80px;
+            z-index: 3;
+        }
+
+        .main5 {
+            position: absolute;
+            top: 1200px;
+            left: 415px;
+            z-index: 4;
+        }
+
+        .main6 {
+            position: absolute;
+            top: 1870px;
+            left: 676px;
+            z-index: 2;
+        }
+
+        .main7 {
+            position: absolute;
+            z-index: 3;
+            top: 1690px;
+            left: 990px;
+        }
+
+        .write {
+            /* border: 1px solid red; */
+            width: 594px;
+            font-size: 26px;
+            position: absolute;
+            z-index: 2;
+            top: 1850px;
+            left: 80px;
+        }
+
+        .write h1 {
+            padding: 18px 0px;
+        }
+
+        .btn2 {
+            border: none;
+            color: white;
+            background-color: rgb(100, 99, 99);
+            margin-left: 378px;
+            width: 200px;
+            padding: 15px;
+        }
+
+        .btn2:hover {
+            cursor: pointer;
+            background-color: rgb(82, 81, 81);
+        }
+
+        .main8 {
+            position: absolute;
+            z-index: 3;
+            top: 2150px;
+            left: 80px;
+        }
+
+        .main9 {
+            /* border: 1px solid red; */
+            width: 450px;
+            height: 430px;
+            text-align: end;
+            position: absolute;
+            top: 2430px;
+            left: 787px;
+            z-index: 3;
+            background-color: #b89f5d;
+            color: white;
+            font-size: 25px;
+        }
+
+        .main9 div {
+            margin-right: 30px;
+            margin-top: 90px;
+        }
+
+        .main9 div p {
+            font-size: 25px;
+            padding: 18px 0px;
+        }
+
+        .main9 .p2 {
+            font-size: 17px;
+        }
+
+        .main10 {
+            /* border: 1px solid black; */
+            position: absolute;
+            z-index: 1;
+            top: 2740px;
+            color: white;
+            background-color: rgb(184, 4, 4);
+            font-size: 24px;
+            width: 673px;
+            height: 780px;
+        }
+
+        .main10 div {
+            padding: 17px;
+            margin-left: 85px;
+            margin-top: 260px;
+        }
+
+        .p3 {
+            font-size: 19px;
+        }
+
+        .main10 h1 {
+            padding: 18px 0px;
+        }
+
+        .main11 {
+            position: absolute;
+            top: 2990px;
+            left: 730px;
+            z-index: 2;
+        }
+
+        .main12 {
+            position: absolute;
+            z-index: 2;
+            left: 676px;
+            top: 3568px;
+        }
+
+        .main13 {
+            /* border: 1px solid red; */
+            width: 420px;
+            height: 320px;
+            position: absolute;
+            top: 3460px;
+            left: 125px;
+            z-index: 3;
+            background-color: #b89f5d;
+            color: white;
+            font-size: 23px;
+            padding: 20px;
+        }
+
+        .main13 div {
+            margin: 60px 10px;
+        }
+
+        .main13 div h1 {
+            padding-top: 15px;
+        }
+
+        .btn3 {
+            border: none;
+            color: white;
+            background-color: rgb(100, 99, 99);
+            width: 150px;
+            margin-top: 50px;
+            padding: 13px;
+        }
+
+        .btn3:hover {
+            cursor: pointer;
+            background-color: rgb(82, 81, 81);
+        }
+
+        .main14 {
+            position: absolute;
+            top: 3898px;
+            left: 125px;
+            z-index: 2;
+        }
+
+        .main15 {
+            /* border: 1px solid pink; */
+            position: absolute;
+            top: 3898px;
+            left: 388px;
+            z-index: 2;
+            width: 250px;
+            height: 218px;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .main16 {
+            /* border: 1px solid red; */
+            width: 670px;
+            height: 700px;
+            position: absolute;
+            top: 4210px;
+            left: 676px;
+            z-index: 1;
+            text-align: end;
+            background-color: rgb(184, 4, 4);
+            color: white;
+            font-size: 24px;
+        }
+
+        .main16 div {
+            margin-top: 230px;
+            padding: 0px 65px;
+        }
+
+        .p4 {
+            font-size: 19px;
+        }
+
+        .main16 div h1 {
+            padding: 20px 0px;
+        }
+
+        .btn4 {
+            border: none;
+            color: white;
+            background-color: #b89f5d;
+            margin-top: 50px;
+            width: 150px;
+            padding: 13px;
+        }
+
+        .btn4:hover {
+            cursor: pointer;
+            background-color: #9c8746;
+            color: rgb(211, 231, 240);
+        }
+
+        .main17 {
+            position: absolute;
+            z-index: 23;
+            top: 4180px;
+            left: 290px;
+
+        }
+
+        .main18 {
+            position: absolute;
+            z-index: 12;
+            top: 4480px;
+            left: 110px;
+        }
+
+        .main19 {
+            width: 1348px;
+            position: absolute;
+            top: 4910px;
+            z-index: 2;
+            background-color: rgb(51, 48, 48);
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .main19 a {
+            color: white;
+        }
+
+        .main19 a:hover {
+            text-decoration: none;
+        }
+
+        @media(max-width: 470px) {
+            .top img {
+                width: 400px;
+            }
+
+            .para {
+                width: 700px;
+                font-size: 35px;
+                margin-top: 250px;
+                margin-left: 300px;
+            }
+
+            .para p {
+                font-size: 39px;
+            }
+
+            .main1 {
+                margin-top: 200px;
+                margin-left: 300px;
+                height: 1610px;
+                width: 800px;
+            }
+
+            .main2 {
+                margin-top: 100px;
+            }
+
+            .img1 {
+                width: 800px;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+            }
+
+            .img1 img {
+                margin-left: 100px;
+            }
+
+            .img2 img {
+                margin-left: 100px;
+            }
+
+            .img2 {
+                width: 800px;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+            }
+
+            .main3 {
+                margin-top: 800px;
+                height: 1900px;
+                width: 900px;
+                margin-left: -241px;
+            }
+
+            .main3 div {
+                margin-top: 1200px;
+
+                font-size: 43px;
+            }
+
+            .main3 p {
+                font-size: 50px;
+            }
+
+            .btn {
+                font-size: 40px;
+                width: 300px;
+            }
+
+            .main4 {
+                margin-top: 890px;
+                margin-left: 220px;
+            }
+
+            .main4 img {
+                width: 560px;
+                height: 600px;
+            }
+
+            .main5 {
+                margin-top: 930px;
+                margin-left: 300px;
+            }
+
+            .main5 img {
+                height: 700px;
+                width: 500px;
+            }
+
+            .write {
+                margin-top: 1800px;
+                margin-left: 200px;
+                font-size: 40px;
+                width: 1050px;
+            }
+
+            .write p {
+                font-size: 50px;
+            }
+
+            .btn2 {
+                margin-left: 650px;
+                font-size: 40px;
+                width: 400px;
+            }
+
+            .main7 {
+                margin-top: 2370px;
+                margin-left: -200px;
+            }
+
+            .main7 img {
+                width: 550px;
+                height: 600px;
+            }
+
+            .main6 {
+                margin-left: -380px;
+                margin-top: 2577px;
+            }
+
+            .main6 img {
+                width: 750px;
+                height: 800px;
+            }
+
+            .main8 {
+                margin-top: 2950px;
+                margin-left: 100px;
+            }
+
+            .main8 img {
+                width: 1000px;
+                height: 1100px;
+            }
+
+            .main9 {
+                margin-left: -607px;
+                margin-top: 3700px;
+                width: 993px;
+                height: 650px;
+                font-size: 50px;
+            }
+
+            .main9 div p {
+                font-size: 70px;
+            }
+
+            .main9 div .p2 {
+                font-size: 50px;
+            }
+
+            .main10 {
+                margin-top: 4150px;
+                width: 1150px;
+                height: 2500px;
+                font-size: 70px;
+            }
+
+            .main10 .p3 {
+                font-size: 50px;
+            }
+
+            .main11 {
+                margin-top: 5700px;
+                margin-left: -500px;
+            }
+
+            .main11 img {
+                width: 650px;
+                height: 600px;
+            }
+
+            .main13 {
+                margin-top: 5900px;
+                width: 800px;
+                height: 520px;
+                margin-left: 50px;
+                font-size: 60px;
+            }
+
+            .btn3 {
+                font-size: 30px;
+                width: 300px;
+            }
+
+            .main14 {
+                margin-top: 6100px;
+                margin-left: 50px;
+
+            }
+
+            .main14 img {
+                width: 850px;
+                height: 700px;
+            }
+
+            .main15 {
+                margin-top: 6900px;
+                width: 1200px;
+                font-size: 70px;
+                text-align: justify;
+                margin-left: -360px;
+                height: 700px;
+            }
+
+            .main12 {
+                margin-top: 8000px;
+                margin-left: -500px;
+            }
+
+            .main12 img {
+                width: 1100px;
+                height: 900px;
+            }
+
+            .main16 {
+                margin-top: 8500px;
+                margin-left: -300px;
+                height: 2650px;
+                width: 1000px;
+                font-size: 80px;
+            }
+
+            .main16 div {
+                margin-top: 1600px;
+            }
+
+            .main16 .p4 {
+                font-size: 60px;
+            }
+
+            .btn4 {
+                font-size: 40px;
+                width: 300px;
+            }
+
+            .main17 {
+                margin-top: 8530px;
+                margin-left: 250px;
+            }
+
+            .main17 img {
+                width: 700px;
+                height: 900px;
+            }
+
+            .main18 {
+                margin-top: 8900px;
+                margin-left: 150px;
+            }
+
+            .main18 img {
+                width: 800px;
+                height: 800px;
+            }
+
+            .main19 {
+                margin-top: 10451px;
+                font-size: 40px;
+                height: 200px;
+                line-height: 200px;
+                width: 1378px;
+            }
+        }
+
+        @media(min-width:470px) and (max-width: 700px) {
+            .top img {
+                width: 300px;
+            }
+
+            .para {
+                width: 700px;
+                font-size: 35px;
+                margin-top: 250px;
+                margin-left: 20px;
+            }
+
+            .para p {
+                font-size: 42px;
+            }
+
+            .main2 {
+                margin-top: 100px;
+                margin-left: 320px;
+            }
+
+            .main2 img {
+                width: 350px;
+            }
+
+            .main1 {
+                margin-top: 200px;
+                margin-left: 70px;
+                height: 2500px;
+                width: 1200px;
+            }
+
+            .img1 {
+                width: 1200px;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+            }
+
+            .img1 img {
+                width: 1100px;
+                height: 1200px;
+            }
+
+            .img2 img {
+                width: 1100px;
+                height: 1200px;
+            }
+
+            .img2 {
+                width: 1200px;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+            }
+
+            .main3 {
+                margin-top: 1700px;
+                height: 2550px;
+                width: 1100px;
+                margin-left: -403px;
+            }
+
+            .main3 div {
+                margin-top: 2000px;
+
+                font-size: 40px;
+            }
+
+            .main3 p {
+                font-size: 60px;
+            }
+
+            .btn {
+                font-size: 40px;
+                width: 300px;
+            }
+
+            .main4 {
+                margin-top: 1800px;
+                margin-left: -15px;
+            }
+
+            .main4 img {
+                width: 800px;
+                height: 900px;
+            }
+
+            .main5 {
+                margin-top: 2000px;
+                margin-left: 50px;
+            }
+
+            .main5 img {
+                height: 1300px;
+                width: 850px;
+            }
+
+            .write {
+                margin-top: 3400px;
+                margin-left: -20px;
+                font-size: 40px;
+                width: 1300px;
+            }
+
+            .write p {
+                font-size: 50px;
+            }
+
+            .btn2 {
+                margin-left: 900px;
+                font-size: 40px;
+                width: 400px;
+            }
+
+            .main7 {
+                margin-top: 3970px;
+                margin-left: -400px;
+            }
+
+            .main7 img {
+                width: 750px;
+                height: 800px;
+            }
+
+            .main6 {
+
+                margin-left: -580px;
+                margin-top: 4300px;
+            }
+
+            .main6 img {
+                width: 950px;
+                height: 1000px;
+            }
+
+            .main8 {
+                margin-top: 4790px;
+                margin-left: -100px;
+            }
+
+            .main8 img {
+                width: 900px;
+                height: 1200px;
+            }
+
+            .main9 {
+                margin-left: -407px;
+                margin-top: 5400px;
+                width: 993px;
+                height: 750px;
+                font-size: 50px;
+            }
+
+            .main9 div p {
+                font-size: 70px;
+            }
+
+            .main9 div .p2 {
+                font-size: 50px;
+            }
+
+            .main10 {
+                margin-top: 5950px;
+                width: 1100px;
+                height: 2500px;
+                font-size: 60px;
+            }
+
+            .main10 .p3 {
+                font-size: 50px;
+            }
+
+            .main11 {
+                margin-top: 7200px;
+            }
+
+            .main11 img {
+                width: 650px;
+                height: 750px;
+            }
+
+            .main13 {
+                margin-top: 7600px;
+                width: 700px;
+                height: 620px;
+                font-size: 60px;
+            }
+
+            .btn3 {
+                font-size: 30px;
+                width: 300px;
+            }
+
+            .main14 {
+                margin-top: 7980px;
+            }
+
+            .main14 img {
+                width: 590px;
+                height: 900px;
+                margin-left: -125px;
+            }
+
+            .main15 {
+                margin-top: 7930px;
+                width: 700px;
+                font-size: 70px;
+                text-align: justify;
+                margin-left: +240px;
+
+            }
+
+            .main12 {
+                margin-top: 9300px;
+                margin-left: -670px;
+            }
+
+            .main12 img {
+                width: 1371px;
+                height: 1100px;
+            }
+
+            .main16 {
+                margin-top: 10000px;
+                margin-left: -350px;
+                height: 2950px;
+                width: 1050px;
+                font-size: 80px;
+
+            }
+
+            .main16 div {
+                margin-top: 1850px;
+            }
+
+            .main16 .p4 {
+                font-size: 60px;
+            }
+
+            .btn4 {
+                font-size: 40px;
+                width: 300px;
+            }
+
+            .main17 {
+
+                margin-top: 10030px;
+                margin-left: 50px;
+            }
+
+            .main17 img {
+                width: 800px;
+                height: 1100px;
+            }
+
+            .main18 {
+                margin-left: -110px;
+                margin-top: 10500px;
+
+            }
+
+            .main18 img {
+                width: 900px;
+                height: 950px;
+            }
+
+            .main19 {
+                margin-top: 12252px;
+                font-size: 40px;
+                height: 200px;
+                line-height: 200px;
+                width: 1378px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="top">
+            <img src="logo-n.png" alt="">
+        </div>
+        <div class="main1">
+            <div class="img1">
+                <img src="	https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/8b32b84e391e5ecc9e074695/hmgoepprod2.jpg"
+                    alt="" width="575px" height="800px">
+            </div>
+            <div class="img2"><img
+                    src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/ea2f05b7375a5ac1847895a6/hmgoepprod6.jpg"
+                    alt="" width="575px" height="800px"></div>
+        </div>
+        <div class="para">
+            <h1>NEW COLLECTION</h1>
+            <p>spring-summer,2019</p>
+        </div>
+        <div class="main2"><img
+                src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/fdadf984795e5525b46afd30/800pxHMLogo.svg.png"
+                alt="" width="300px" height="250px"></div>
+        <div class="main3">
+            <div>
+                <p>Give someone you love the gift of </p>
+                <p> fashion with H&M Gift Cards</p><br>
+                <h1>LOVE & FASHION</h1><br>
+                <P class="p1">Gift Cards available onlinne & in-store</P>
+                <button class="btn">GIFT CARD</button>
+            </div>
+        </div>
+        <div class="main4">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/46f84767f66d5c74ab457fd6/hmgoepprod7.jpg"
+                alt="" width="400px" height="400px">
+        </div>
+        <div class="main5">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/dab0f19c8113547080b2b2e0/hmgoepprod8.jpg"
+                alt="" width="350px" height="500px">
+        </div>
+        <div class="main6"><img
+                src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/11a2c18ac65e5aadb41e1d82/hmgoepprod4.jpg"
+                alt="" width="400px" height="450px"></div>
+        <div class="main7"><img
+                src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/dce13c3d9cc1533cb8835dc9/www.fashiongonerogue.comHMDividedPartyDressesad72f356ad45f68dfd659e9b8ab8e6aa65383557.jpg"
+                alt="" width="250px" height="250px"></div>
+        <div class="write">
+            <p>Voices Of Valentine</p>
+            <h1>WHO'S YOUR SPECIAL SOMEONE?</h1>
+            <button class="btn2">VIEW&nbsp;COLLECTION</button>
+        </div>
+        <div class="main8"><img
+                src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/9abaf816a86c5590b70afaf7/hmgoepprod.jpg"
+                alt="" width="575px" height="650px"></div>
+        <div class="main9">
+            <div>
+                <p>Divided</p>
+                <h1>DENIM ALL DAY,</h1>
+                <h1>EVERY DAY</h1>
+                <p class="p2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When H&M teams up with fellow Swedish cult brand
+                    Eytys, it’s all about chunky shoes and unisex silhouettes.</p>
+            </div>
+        </div>
+        <div class="main10">
+            <div>
+                <p>01/03/2019</p>
+                <h1>UNISEX DESIGN IS IN OUR DNA, WE DO IT WITHOUT THINKING</h1><br>
+                <p class="p3">The 90s influence has never been an intention, but we grew up in that decade. That was
+                    when our identities were formed, when clothing and sneakers became important. It's easy to become
+                    nostalgic.</p>
+            </div>
+        </div>
+        <div class="main11">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/fc6014aec61c5037ac0ffb33/hmgoepprod9.jpg"
+                alt="" width="510px" height="450px">
+        </div>
+        <div class="main12">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/36c47790aec65cd6b3060f55/hmgoepprod3.jpg"
+                alt="" width="564px" height="580px">
+        </div>
+        <div class="main13">
+            <div>
+                <p>Accesssorise</p>
+                <h1>INSIDE H&nbsp;&&nbsp;M</h1>
+                <button class="btn3">READ MORE</button>
+            </div>
+        </div>
+        <div class="main14"><img
+                src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/4d00179ce39551a8af52bc33/hmgoepprod11.jpg"
+                alt="" width="250px" height="250px"></div>
+        <div class="main15">
+            <p>And of course there's a version of 'Mother' in this capsule collection. It's an iconic model for us, and
+                it would have been weird not to include a rendition of it. It has been so much fun to explore new ways
+                to modify the classic, with new textures and new materials.</p>
+        </div>
+        <div class="main16">
+            <div>
+                <p>Calling All Students</p>
+                <h1>UNIDAYS IS HERE</h1>
+                <p class="p4">Eytys is all about playing with proportions and materials. When we wanted to do a heavy
+                    cotton jersey sweater for this collection, we sourced the driest, heaviest cotton jersey I could
+                    find.</p>
+                <button class="btn4">READ MORE</button>
+            </div>
+        </div>
+        <div class="main17">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/ee0ba345d09a52cb9e961334/hmgoepprod5.jpg"
+                alt="" width="350px" height="480px">
+        </div>
+        <div class="main18">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/53fc2ee6f1d3568aa8e6cc02/hmgoepprod10.jpg"
+                alt="" width="350px" height="350px">
+        </div>
+        <div class="main19">
+            <a href="" target="_blank">Template</a>
+            <span>created with</span>
+            <a href="" target="_blank">Nicepage.</a>
+        </div>
+    </div>
+</body>
+
+</html>
